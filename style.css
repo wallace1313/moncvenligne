@@ -1,0 +1,180 @@
+body {
+	display: flex;
+    font-family: sans-serif;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+aside {
+	display:flex;
+	flex-direction: column;
+	padding-top: 50px;
+	max-width: 250px;
+	background: #FFEB3B;
+}
+
+aside h2 {
+	text-transform: uppercase;
+    background: #263238;
+    text-align: center;
+    color: yellow;
+    font-weight: normal;
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+ul {
+	list-style-type: none;
+    font-size: 13px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 50px;
+    font-weight: normal;
+}
+
+li {
+	margin-top: 10px;
+}
+
+p {
+	margin: 0;
+}
+
+h1 span {
+	color: #FFEB3B;
+}
+
+h3 {
+	margin: 0;
+}
+
+h4 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+h5 {
+	margin-top: 8px;
+} 
+
+header {
+	margin: 80px 0 0 50px;
+}
+
+.mon-parcours-pro {
+	margin-left: 50px;
+	margin-right: 40px;
+    margin-top: 70px;
+}
+
+.mon-parcours-pro h2{
+	position: relative;
+	text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mon-parcours-pro svg{
+	width: 40px;
+}
+
+.formation-section svg {
+	width: 15px;
+}
+
+.mon-parcours-pro span{
+	padding-left: 20px;
+}
+
+.formation-section {
+	display: flex;
+	margin-top: 20px;
+}
+
+.formation-section > div {
+	padding-left: 50px;
+}
+.formation-section h3{
+	display: flex;
+    width: 400px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.mon-parcours-pro {
+	font-size: 12px;
+}
+
+.mon-parcours-pro h2:before{
+	position: absolute;
+    content: '';
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 2px;
+    background: orange;
+}
+
+#corps-principal p {
+	position: relative;
+}
+
+#corps-principal p:before {
+	position: absolute;
+    content: '';
+    left: 0;
+    bottom: -2px;
+    width: 50px;
+    height: 2px;
+    background: orange;
+}
+
+.loisirs div {
+	text-align: center;
+}
+
+.loisirs svg {
+	width: 35px;
+	padding: 0 10px;
+}
+
+.a-propos-de-moi p {
+	font-size: 13px;
+    padding: 20px 40px;
+}
+
+.photo {
+	width: 60%;
+    margin: 0 auto;
+}
+
+.recommandations-texte {
+	display: flex;
+}
+
+.recommandations-texte div:nth-child(2) {
+	padding-left: 30%;
+}
+
+.recommandations-texte div p:first-child {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.recommandations-texte div p {
+	padding-top: 3px;
+}
+
+.recommandations-texte div p:not(:last-child) {
+	font-weight: bold;
+}
