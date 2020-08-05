@@ -8,11 +8,22 @@ body {
     border-right: 1px solid;
     margin: 0 auto;
 }
-@media(min-width: 768px) and (max-width: 1388px)
 
-@media(max-width: 767px)
+/* Grand écran */
+@media (min-width: 1281px) { ... 
+}
 
+/* Tablette en mode portrait et résolutions inférieures */
+@media (min-width: 960px) and (max-width: 1280px) { ... 
+}
 
+/* Smartphone en mode paysage et résolutions inférieures */
+@media (min-width: 480px) and (max-width: 959px) { ... 
+}
+
+/* Smartphone en mode portrait */
+@media (max-width: 479px) { ... 
+}
 
 img {
 	max-width: 100%;
@@ -24,14 +35,14 @@ aside {
 	flex-direction: column;
 	padding-top: 50px;
 	max-width: 250px;
-	background: #FFEB3B;
+	background: #FFCA28;
 }
 
 aside h2 {
 	text-transform: uppercase;
-    background: #263238;
+    background: #212121;
     text-align: center;
-    color: yellow;
+    color:#FFCA28;
     font-weight: normal;
     font-size: 17px;
     padding: 10px 0;
@@ -57,7 +68,7 @@ p {
 }
 
 h1 span {
-	color: #FFEB3B;
+	color: #FFCA28;
 }
 
 h3 {
@@ -132,7 +143,7 @@ header {
     bottom: -7px;
     width: 100%;
     height: 2px;
-    background: orange;
+    background:#FFCA28;
 }
 
 #corps-principal p {
@@ -146,21 +157,22 @@ header {
     bottom: -2px;
     width: 50px;
     height: 2px;
-    background: orange;
+    background:#FFCA28;
 }
 
 .loisirs div {
 	text-align: center;
+	padding:9px 3px;
 }
 
 .loisirs svg {
 	width: 35px;
-	padding: 0 10px;
+	padding: 0 8px;
 }
 
 .a-propos-de-moi p {
-	font-size: 13px;
-    padding: 20px 40px;
+	font-size: 12px;
+    padding: 50px 40px;
 }
 
 .photo {
