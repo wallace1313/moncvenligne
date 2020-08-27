@@ -82,7 +82,7 @@ header {
     margin-top: 70px;
 }
 
-.mon-parcours-pro h2{
+.mon-parcours-pro h2 {
 	position: relative;
 	text-transform: uppercase;
     font-size: 20px;
@@ -90,7 +90,7 @@ header {
     align-items: center;
 }
 
-.mon-parcours-pro svg{
+.mon-parcours-pro svg {
 	width: 40px;
 }
 
@@ -98,30 +98,31 @@ header {
 	width: 15px;
 }
 
-.mon-parcours-pro span{
+.mon-parcours-pro span {
 	padding-left: 20px;
 }
 
 .formation-section {
 	display: flex;
 	margin-top: 20px;
+	padding-bottom: 20px;
 }
 
 .formation-section > div {
 	padding-left: 50px;
 }
-.formation-section h3{
+
+.formation-section h3 {
 	display: flex;
     width: 400px;
     align-items: flex-start;
-    justify-content: space-evenly;
 }
 
 .mon-parcours-pro {
 	font-size: 15px;
 }
 
-.mon-parcours-pro h2:before{
+.mon-parcours-pro h2:before {
 	position: absolute;
     content: '';
     left: 0;
@@ -150,9 +151,8 @@ header {
 	padding:9px 3px;
 }
 
-.loisirs svg {
-	width: 35px;
-	padding: 0 8px;
+.fa, .fas {
+	font-size: 30px; 
 }
 
 .a-propos-de-moi p {
@@ -167,10 +167,7 @@ header {
 
 .recommandations-texte {
 	display: flex;
-}
-
-.recommandations-texte div:nth-child(2) {
-	padding-left: 30%;
+	justify-content: space-around;
 }
 
 .recommandations-texte div p:first-child {
@@ -245,6 +242,17 @@ h1 {
     margin: 0 auto;
 }
 
+.recommandations-texte {
+	display: flex;
+	justify-content: space-around;
+}
+
+.recommandations-texte div {
+	padding-left: 5px;
+}
+
+}
+
 /* Smartphone en mode portrait */
 @media only screen and (max-width: 479px) {
 
@@ -254,7 +262,7 @@ h1 {
 	flex-flow: column;
 }
 
-.formation-section h3{
+.formation-section h3 {
 	display: flex;
     width: 400px;
     align-items: flex-start;
@@ -264,5 +272,7 @@ h1 {
 }
 
 .mon-parcours-pro {
-	font-size: 13px;
+	font-size: 15px;
+}
+
 }
