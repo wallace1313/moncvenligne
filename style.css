@@ -5,7 +5,6 @@ body {
 
 	/*pour avoir version A4*/
 	max-width: 950px;
-    border-right: 1px solid;
     margin: 0 auto;
 }
 
@@ -18,7 +17,7 @@ aside {
 	display:flex;
 	flex-direction: column;
 	padding-top: 50px;
-	max-width: 250px;
+	max-width: 450px;
 	background: #FFCA28;
 }
 
@@ -187,16 +186,12 @@ header {
 /* Smartphone en mode paysage et résolutions inférieures */
 @media only screen and (max-width: 959px) {
 /* smartphone en mode portait */
+
 body {
 	display: flex;
 	flex-flow: column-reverse;
     font-family: sans-serif;
 	margin: 0;
-
-	/*pour avoir version A4*/
-	max-width: 959px;
-    border-right: 1px solid;
-    margin: 0 auto;
 }
 
 aside {
@@ -204,7 +199,7 @@ aside {
 	flex-direction: column;
 	text-align: center;
 	padding-top: 50px;
-	max-width: 969px;
+	max-width: 959px;
 	background: #FFCA28;
 }
 
@@ -254,7 +249,23 @@ h1 {
 }
 
 /* Smartphone en mode portrait */
-@media only screen and (max-width: 479px) {
+@media screen and (max-width: 479px) {
+
+body {
+	display: flex;
+	flex-flow: column-reverse;
+    font-family: sans-serif;
+	margin: 0;
+}
+
+aside {
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 50px;
+	max-width: max-content;
+	background: #FFCA28;
+}
 
 .formation-section {
 	display: flex;
