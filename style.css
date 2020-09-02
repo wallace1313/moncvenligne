@@ -1,11 +1,16 @@
+html, body {
+	overflow-x: hidden; 
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	display: flex;
     font-family: sans-serif;
-	margin: 0;
 
 	/*pour avoir version A4*/
 	max-width: 950px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 img {
@@ -183,83 +188,17 @@ header {
 	font-weight: bold;
 }
 
-/* Smartphone en mode paysage et résolutions inférieures */
-@media only screen and (max-width: 959px) {
-/* smartphone en mode portait */
-
-body {
-	display: flex;
-	flex-flow: column-reverse;
-    font-family: sans-serif;
-	margin: 0;
-}
-
-aside {
-	display:flex;
-	flex-direction: column;
-	text-align: center;
-	padding-top: 50px;
-	max-width: 959px;
-	background: #FFCA28;
-}
-
-h1 {
-	margin: 0;
-	font-size: 50px;
-    font-weight: normal;
-    text-align: center;
-}
-
-.formation-section > div {
-	padding-left: 50px;
-}
-
-#corps-principal p {
-	position: relative;
-	text-align: center;
-}
-
-#corps-principal p:before {
-	position: absolute;
-    content: '';
-    left: auto;
-    bottom: -2px;
-    width: 50px;
-    height: 2px;
-    background:#FFCA28;
-}
-
-.formation-section h3 {
-	padding-bottom: 20px;
-}
-.photo {
-	width: 40%;
-    margin: 0 auto;
-}
-
-.recommandations-texte {
-	display: flex;
-	justify-content: space-around;
-}
-
-.recommandations-texte div {
-	padding-left: 5px;
-}
-
-}
-
 /* Smartphone en mode portrait */
-@media screen and (max-width: 479px) {
+@media only screen and (max-width: 479px)  {
 
 body {
 	display: flex;
 	flex-flow: column-reverse;
-    font-family: sans-serif;
-	margin: 0;
+	font-family: sans-serif;
 }
 
 aside {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	text-align: center;
 	padding-top: 50px;
@@ -269,21 +208,133 @@ aside {
 
 .formation-section {
 	display: flex;
-	margin-top: 20px;
 	flex-flow: column;
+	margin-top: 20px;
+	padding-bottom: 20px;
 }
 
 .formation-section h3 {
 	display: flex;
     width: 400px;
     align-items: flex-start;
-    justify-content: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
 }
 
 .mon-parcours-pro {
-	font-size: 15px;
+	font-size: 13px;
+}
+
+.mon-parcours-pro > div {
+	padding-right: 2px;
 }
 
 }
+
+/*smartphone en mode paysage*/
+@media only screen and (max-width: 979px) and  (orientation:landscape) {
+
+body {
+	display: flex;
+	flex-flow: column-reverse;
+	font-family: sans-serif;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 50px;
+	max-width: max-content;
+	background: #FFCA28;
+}
+
+.photo {
+	width: 40%;
+    margin: 0 auto;
+}
+
+}
+
+/*media queries pour autres surfaces*/
+@media only screen and (max-width: 768px) {
+
+body {
+	display: flex;
+	flex-flow: column-reverse;
+	font-family: sans-serif;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 50px;
+	max-width: max-content;
+	background: #FFCA28;
+}
+
+}
+
+/* media queries galaxy fold*/
+@media only screen and (max-width: 280px) {
+
+body {
+	display: flex;
+	flex-flow: column-reverse;
+	font-family: sans-serif;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 50px;
+	max-width: max-content;
+	background: #FFCA28;
+}
+
+
+h1 {
+	margin: 0;
+	font-size: 40px;
+    font-weight: normal;
+}
+
+h4 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.mon-parcours-pro {
+	font-size: 11px;
+}
+
+.mon-parcours-pro h2 {
+	position: relative;
+	text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.mon-parcours-pro > div {
+	padding-right: 2px;
+}
+
+.formation-section h3 {
+	display: flex;
+    width: 400px;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+} 
